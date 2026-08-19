@@ -434,12 +434,12 @@ function AccountMismatch({
   onUseAccount?: (address: string) => void
 }) {
   return (
-    <div className="w-full rounded-[10px] border border-navy/15 bg-info-tint p-5 text-left">
+    <div className="w-full rounded-[10px] border border-field-line bg-sidebar-shell p-5 text-left">
       <p className="flex items-center gap-2 text-base leading-6 font-semibold text-navy">
         <TriangleAlert className="size-[18px]" strokeWidth={1.75} />
         This is not the wallet you entered
       </p>
-      <dl className="mt-4 flex flex-col gap-2 border-t border-navy/10 pt-4 text-sm leading-[22px]">
+      <dl className="mt-4 flex flex-col gap-2 border-t border-field-line pt-4 text-sm leading-[22px]">
         <div className="flex items-center justify-between gap-4">
           <dt className="text-ink60">You entered</dt>
           <dd className="font-mono text-ink90">{shortenAddress(expected)}</dd>
